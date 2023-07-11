@@ -1,15 +1,27 @@
 import {v4 as uuidv4} from 'uuid'
-import {useState, useEffect} from "react"
+import {useState} from "react"
 
 import Todo from '../Todo'
 import "./index.css"
 
 
+const todoListKey = 'todos_key'
+
 const Home = () => {
-    const [todos, setTodoList] = useState([])
+    const todoList = localStorage.getItem(todoListKey)
+    const parsedList = JSON.parse(todoList)
+    const listToParse = todoList=== null ? [] : parsedList 
+
+    const [todos, setTodoList] = useState(listToParse)
     const [userInput, setUserInput] = useState("")
 
-    const changeInput = (event) => setUserInput(event.target.value)
+    const saveTodosList = () => {
+        console.log(todos)
+        localStorage.clear()
+        localStorage.setItem(todoListKey, JSON.stringify(todos))
+    }
+
+    const changeInput = (event) => {setUserInput(event.target.value)}
 
     const onDeleteTodo = (id) => {
         const newTodoList = todos.filter(eachTodo => id !== eachTodo.id)
@@ -21,7 +33,7 @@ const Home = () => {
         todos.map((eachTodo) => {
             if (eachTodo.id === id){
                 eachTodo.todoStatus = !eachTodo.todoStatus;
-                return
+                return null
             }
         })
         const newTodos = [...todos]
@@ -53,6 +65,7 @@ const Home = () => {
             <Todo 
             todoList={todos} onDeleteTodo={onDeleteTodo} updateTodoStatus={updateTodoStatus} className="todos"
             />
+            <button type='button' onClick={saveTodosList} className='save-btn'>Save</button>
         </div>
     </div>)
 }
