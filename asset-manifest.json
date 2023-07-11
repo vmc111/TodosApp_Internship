@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TodosApp_Internship/static/css/main.8cb6e5ca.css",
+    "main.js": "/TodosApp_Internship/static/js/main.888aa228.js",
+    "static/js/787.7985aa9b.chunk.js": "/TodosApp_Internship/static/js/787.7985aa9b.chunk.js",
+    "index.html": "/TodosApp_Internship/index.html",
+    "main.8cb6e5ca.css.map": "/TodosApp_Internship/static/css/main.8cb6e5ca.css.map",
+    "main.888aa228.js.map": "/TodosApp_Internship/static/js/main.888aa228.js.map",
+    "787.7985aa9b.chunk.js.map": "/TodosApp_Internship/static/js/787.7985aa9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cb6e5ca.css",
+    "static/js/main.888aa228.js"
+  ]
+}
