@@ -44,6 +44,18 @@
     font-weight: 400;
 }
 
+@media all and (max-width: 768px){
+    .todo-list{
+        margin-top: 20px;
+    }
+    .item{
+        padding: 5px 15px;
+    }
+    .task-label{
+        font-size: 22px;
+    }
+}
+
 .delete-btn {
     padding: 0px;
     background-color: #e6f6ff;
