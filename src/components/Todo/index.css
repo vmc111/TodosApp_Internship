@@ -1,0 +1,57 @@
+.todo-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+}
+
+.item-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.item {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+
+    background-color: #e6f6ff;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #096f92;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+}
+
+.check-box {
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.task-label {
+    margin: 0px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.delete-btn {
+    padding: 0px;
+    background-color: #e6f6ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.task-label-done {
+    text-decoration: line-through;
+}
