@@ -44,7 +44,7 @@ const Todo = props => {
                     <li className='item-div' key={eachTodo.id}>
                         <input checked type='checkbox' className='check-box' htmlFor={eachTodo}
                          value={eachTodo.id} onChange={updateTaskStatus} />
-                        <div className='item'>
+                        <div className='item item-checked'>
                             <p className='task-label task-label-done'>{ eachTodo.task }</p>
                             <button onClick={onClickDelete} type='button' className='delete-btn'><AiFillDelete size="30" /></button>
                         </div>
