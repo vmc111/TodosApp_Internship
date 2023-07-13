@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TodosApp_Internship/static/css/main.c89975ac.css",
-    "main.js": "/TodosApp_Internship/static/js/main.888aa228.js",
+    "main.js": "/TodosApp_Internship/static/js/main.72cb6a9f.js",
     "static/js/787.7985aa9b.chunk.js": "/TodosApp_Internship/static/js/787.7985aa9b.chunk.js",
     "index.html": "/TodosApp_Internship/index.html",
     "main.c89975ac.css.map": "/TodosApp_Internship/static/css/main.c89975ac.css.map",
-    "main.888aa228.js.map": "/TodosApp_Internship/static/js/main.888aa228.js.map",
+    "main.72cb6a9f.js.map": "/TodosApp_Internship/static/js/main.72cb6a9f.js.map",
     "787.7985aa9b.chunk.js.map": "/TodosApp_Internship/static/js/787.7985aa9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c89975ac.css",
-    "static/js/main.888aa228.js"
+    "static/js/main.72cb6a9f.js"
   ]
 }
