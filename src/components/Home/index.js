@@ -16,7 +16,7 @@ const Home = () => {
     const [userInput, setUserInput] = useState("")
 
     const saveTodosList = () => {
-        console.log(todos)
+        // console.log(todos)
         localStorage.clear()
         localStorage.setItem(todoListKey, JSON.stringify(todos))
     }
@@ -25,6 +25,8 @@ const Home = () => {
 
     const onDeleteTodo = (id) => {
         const newTodoList = todos.filter(eachTodo => id !== eachTodo.id)
+        localStorage.clear()
+        localStorage.setItem(todoListKey, JSON.stringify(newTodoList))
         setTodoList(newTodoList)
     }
 
@@ -35,6 +37,7 @@ const Home = () => {
                 eachTodo.todoStatus = !eachTodo.todoStatus;
                 return null
             }
+            return null
         })
         const newTodos = [...todos]
         // console.log(todos)
